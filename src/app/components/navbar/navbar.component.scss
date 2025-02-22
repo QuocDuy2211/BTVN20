@@ -38,6 +38,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .list-icon-item {
@@ -64,6 +65,7 @@
   border: #dddddd 1px solid;
   border-radius: 30px;
   padding: 8px 12px;
+  cursor: pointer;
 
   p {
     margin: 0;
@@ -92,6 +94,7 @@
   border: #dddddd 1px solid;
   border-radius: 30px;
   padding: 8px 12px;
+  cursor: pointer;
 }
 
 .btn-container {
@@ -101,6 +104,7 @@
   border: #dddddd 1px solid;
   border-radius: 30px;
   padding: 8px 12px;
+  cursor: pointer;
 
   p {
     margin: 0;
