@@ -14,9 +14,9 @@
         </div>
       </div>
       <div class="icon-center">
-        <p class="zero">0</p>
+        <p class="zero">{{ total }}</p>
         <div class="icon-button">
-          <span class="material-symbols-outlined">shopping_cart</span>
+          <mat-icon [routerLink]="['/cart']"> shopping_cart </mat-icon>
         </div>
       </div>
       <div class="icon-right">
@@ -47,18 +47,22 @@
       <p>COMBO TIỆC DEAL</p>
     </div>
     <div class="list-icon-item">
-      <span class="material-symbols-outlined">local_pizza</span>
+      <span [routerLink]="['/pizza']" class="material-symbols-outlined"
+        >local_pizza</span
+      >
       <p>PIZZA</p>
     </div>
     <div class="list-icon-item">
-      <span class="material-symbols-outlined">egg_alt</span>
+      <span [routerLink]="['/chickens']" class="material-symbols-outlined"
+        >egg_alt</span
+      >
       <p>GHIỀN GÀ</p>
     </div>
     <div class="list-icon-item">
       <span class="material-symbols-outlined">width_normal</span>
       <p>MY BOX</p>
     </div>
-    <div class="list-icon-item">
+    <div [routerLink]="['/desserts']" class="list-icon-item">
       <span class="material-symbols-outlined">dinner_dining</span>
       <p>MÓN KHAI VỊ</p>
     </div>

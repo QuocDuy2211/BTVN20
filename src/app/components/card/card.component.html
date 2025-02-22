@@ -1,14 +1,16 @@
 <div class="card">
   <div class="card-image">
-    <img alt="pizza" src="{{ image }}" />
+    <img alt="pizza" src="{{ pizza.image }}" />
   </div>
   <div class="card-content">
-    <h3>{{ title }}</h3>
+    <h3 class="tittle">{{ pizza.title }}</h3>
     <div class="card-content-bottom">
       <p>chỉ từ</p>
       <div class="price">
-        <p>{{ price }}<a class="d">đ</a></p>
-        <a class="material-symbols-outlined">add_circle</a>
+        <p>{{ pizza.price }}<a class="d">đ</a></p>
+        <button (click)="addToCart()" class="bottom-button" mat-mini-fab>
+          <mat-icon>add</mat-icon>
+        </button>
       </div>
     </div>
   </div>

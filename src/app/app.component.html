@@ -1,12 +1,2 @@
 <app-navbar></app-navbar>
-<div class="list-card">
-  @for (card of products; track $index) {
-    <app-card
-      [image]="card.image"
-      [title]="card.title"
-      [type]="card.type"
-      [price]="card.price"
-    >
-    </app-card>
-  }
-</div>
+<router-outlet></router-outlet>
